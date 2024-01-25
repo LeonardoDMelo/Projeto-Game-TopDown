@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4374242ed1c77f645add008fe8fef57c, type: 3}
+  m_Name: NPC_1
+  m_EditorClassIdentifier: 
+  actor: {fileID: 0}
+  speakerSprite: {fileID: 0}
+  sentence: 
+  dialogues:
+  - actorName: Lidiane
+    profile: {fileID: 0}
+    sentence:
+      portuguese: "Ol\xE1, nobre viajante, poderia me informar qual seu nome?"
+      english: Hello, noble traveler, could you tell me your name?
+      spanish: "Hola noble viajero, \xBFpodr\xEDas decirme tu nombre?"
+  - actorName: Lidiane
+    profile: {fileID: 0}
+    sentence:
+      portuguese: Tudo bem com voce?
+      english: How are you?
+      spanish: "\xBFC\xF3mo est\xE1s?"
+  - actorName: Lidiane
+    profile: {fileID: 0}
+    sentence:
+      portuguese: Tambem estou bem
+      english: I am well too
+      spanish: "Tambi\xE9n estoy bien"
+  - actorName: Lidiane
+    profile: {fileID: 0}
+    sentence:
+      portuguese: Poderia me ajudar com uma coisa?
+      english: Could you help me with something?
+      spanish: "\xBFPodr\xEDas ayudarme con algo?"

@@ -463,9 +463,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 853
-        width: 25
-        height: 7
+        y: 854
+        width: 10
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1577,7 +1577,7 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 576
-        width: 32
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1697,6 +1697,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: OBJECTS_75
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 844
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5918f91b5482742ae4e837317a0d93
+      internalID: -434096676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJECTS_76
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 853
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a2a0d2ccd408a41b96aeb210dc8cbd
+      internalID: -1969899739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OBJECTS_77
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 576
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6216a4edb7b2d746b922f3c0c69f066
+      internalID: 1116220074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1781,6 +1844,9 @@ TextureImporter:
       OBJECTS_72: -491238227
       OBJECTS_73: 1871651049
       OBJECTS_74: -304052246
+      OBJECTS_75: -434096676
+      OBJECTS_76: -1969899739
+      OBJECTS_77: 1116220074
       OBJECTS_8: -508681783
       OBJECTS_9: 1469078954
   mipmapLimitGroupName: 

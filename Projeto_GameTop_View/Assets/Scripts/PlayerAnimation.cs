@@ -6,11 +6,14 @@ public class PlayerAnimation : MonoBehaviour
 {
     private Player player;
     private Animator anim;
+    private Casting cast;
 
     void Start()
     {
         player = GetComponent<Player>();
         anim = GetComponent<Animator>();
+
+        cast = FindObjectOfType<Casting>();
     }
 
 
@@ -53,6 +56,14 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.SetInteger("transition", 3);
         }
+        if (player.isDigging)
+        {
+            anim.SetInteger("transition", 4);
+        }
+        if (player.isWatering)
+        {
+            anim.SetInteger("transition", 5);
+        }
 
     }
 
@@ -66,4 +77,17 @@ public class PlayerAnimation : MonoBehaviour
 
     #endregion Movement
 
+    //Chamado quando o jogar pressiona botão de ação na parte de cima da agua
+    public void OnCastingStarted()
+    {
+        anim.SetTrigger("isCasting");
+        player.isPaused = true;
+    }
+
+    //Chamado no final da animação de pescaria
+    public void OnCastingEnded()
+    {
+        cast.OnCasting();
+        player.isPaused = false;
+    }
 }

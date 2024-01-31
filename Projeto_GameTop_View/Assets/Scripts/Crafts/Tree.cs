@@ -7,25 +7,36 @@ public class Tree : MonoBehaviour
     [SerializeField] private float treeHealth;
     [SerializeField] private Animator anim;
 
-   
+    [SerializeField] private GameObject woodPrefab;
+    [SerializeField] private int totalWood;
+
+    [SerializeField] private ParticleSystem leafts;
+
+    private bool isCut;
 
     public void OnHit()
     {
         treeHealth--;
 
         anim.SetTrigger("isHit");
+        leafts.Play();
 
         if(treeHealth <= 0)
         {
+            for(int i = 0; i < totalWood; i++)
+            {
+            Instantiate(woodPrefab,transform.position + new Vector3(Random.RandomRange(-0.5f,0.5f),Random.RandomRange(-0.5f, 0.5f),0f), transform.rotation);
+
+            }
             //Cria toco instancia drops
             anim.SetTrigger("cut");
+            isCut = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Axe"))
+        if(collision.CompareTag("Axe") && !isCut)
         {
-            Debug.Log("Bateu");
             OnHit();
         }
     }
